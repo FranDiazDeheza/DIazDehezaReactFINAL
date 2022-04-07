@@ -41,7 +41,7 @@ if (itemInCart) {
     <div class="bg-white">
   <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
     
-    <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+    <div class="col d-flex justify-content-center mb-4">
           <img src={image} alt=""></img>
         </div>
         <div class="mt-4 flex justify-between">

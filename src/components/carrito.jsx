@@ -11,7 +11,22 @@ function Carrito(){
 
 
 
-    if(itemsCart.length === 0){
+let itemsForOrder = itemsCart.map((ItemAAgregar) => {
+    return {id: ItemAAgregar.id, name: ItemAAgregar.book_name, price: ItemAAgregar.price,qty: ItemAAgregar.qty}
+});
+
+const order = {
+    buyer: {
+        name: "coder",
+        phonenumber: "18101816",
+        mail: "genericmail@cdhouse.arg",
+    },
+    items: [...itemsForOrder],
+    total: getTotalPrice(),
+};
+
+
+      if(itemsCart.length === 0){
         return (
             <div className="container" id="noelem">
                 <h1>No hay elementos</h1>
@@ -28,7 +43,8 @@ function Carrito(){
 
 
           <div className="container">
-              <h1> Carrito de Compras</h1>
+              <h1 id="carrix"> Carrito de Compras</h1>
+              <br></br>
               <table className="table">
               <thead>
               <tr>
@@ -62,7 +78,7 @@ function Carrito(){
                   
               </tbody>
               </table>
-              <button onClick={clearCart} className="btn btn-danger" id="vac"> Vaciar Carrito</button>
+              <button id="vac" onClick={clearCart} className="btn btn-danger h-500 center-v center-h" > Vaciar Carrito</button>
             </div>
 
 

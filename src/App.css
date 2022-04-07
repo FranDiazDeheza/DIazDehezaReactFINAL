@@ -66,6 +66,13 @@
 }
 
 #vac{
+  display: flex;
+  align-items: center;
+}
+
+
+#carrix{
+  
   text-align: center;
   align-items: center;
   justify-content: center;

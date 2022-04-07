@@ -29,9 +29,9 @@ export async function getallBooks () {
     return result
 }
 
-export async function getAllBooksFrom(gender){
+export async function getAllBooksFrom(category){
     const miColec = collection(db,"books");
-    const myquery = query(miColec,where("book_name","==",gender))
+    const myquery = query(miColec,where("gender","==",category))
 
     const booksSnap = await getDocs(myquery)
 
