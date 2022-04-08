@@ -57,6 +57,7 @@ if(orderDone){
             <div className="container" id="noelem">
                 <h1>No hay elementos</h1>
                 <p>Te invitamos a adquirir un libro!</p>
+                <img id="gif" src="https://c.tenor.com/GdHSY2i9wW0AAAAC/funny-as.gif"></img>
                 <Link type="button" className="btn btn-primary" to="../">Ir a la Biblioteca</Link>
                  
 
@@ -104,7 +105,9 @@ if(orderDone){
                   
               </tbody>
               </table>
-              <button id="vac" onClick={clearCart} className="btn btn-danger h-500 center-v center-h" > Vaciar Carrito</button>
+              <div class="d-flex justify-content-center">
+              <button id="vac" onClick={clearCart} className="btn btn-danger h-500  center-v center-h" > Vaciar Carrito</button>
+              </div>
              <CarrForm handleSubmit={handleSubmit} />
             </div>
 

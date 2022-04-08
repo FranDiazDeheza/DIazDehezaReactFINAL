@@ -34,25 +34,25 @@ function CarrForm({handleSubmit}) {
 
   return (
     <div className="container mt-5">
-        <h2> Completar con tu informacion para concluir la compra</h2>
+        <h2 id="complet"> Completar con tu informacion para concluir la compra</h2>
         
-    <form className="py-5">
-        <div>
+    <form id="formi" className="py-5">
+        <div id="labels" >
             <label htmlFor="name">Nombre y Apellido</label>
             <input onChange={evt => handleInput(evt)} value={buyer.name} type="text" name="name"></input>
         </div>
         <hr/>
-        <div>
-            <label htmlFor="phonenumber">Telefono</label>
+        <div id="labels">
+            <label  htmlFor="phonenumber">Telefono</label>
             <input onChange={evt => handleInput(evt)} value={buyer.phonenumber} type="text" name="phonenumber"></input>
         </div>
         <hr/>
-        <div>
+        <div id="labels">
             <label htmlFor="mail">Email</label>
             <input onChange={evt => handleInput(evt)} value={buyer.mail} type="text" name="mail"></input>
         </div>
         <hr/>
-        <div className="btn-group text-center mt-4">
+        <div className="btn-group d-flex justify-content-center text-center mt-4">
             <button onClick={handleForm} className="btn btn-success">Finalizar</button>
         </div>
 

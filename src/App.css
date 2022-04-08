@@ -92,3 +92,35 @@
   justify-content: center;
 }
 
+#genderbook{
+  font-size: 18px;
+
+}
+
+#titlebook{
+  font-size: 25px;
+
+}
+
+#price{
+  font-size:20px
+}
+
+#complet{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#formi{
+  margin: auto;
+  width: 220px;
+}
+
+#labels{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+

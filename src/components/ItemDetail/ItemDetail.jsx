@@ -44,22 +44,22 @@ if (itemInCart) {
     <div className="col d-flex justify-content-center mb-4">
           <img src={image} alt=""></img>
         </div>
-        <div id="info" className="mt-4 flex justify-between">
+        <div id="info" className="mt-4">
           <div>
-            <h3 className="text-sm text-gray-700">
+          <h3 id="titlebook" className="text-sm text-center text-gray-700">
               
                 <span aria-n="true"></span>
                 {book_name}
               
             </h3>
-            <p className="mt-1 text-sm text-gray-500">{writer_name}</p>
-            <p className="mt-1 text-sm text-gray-500">{gender}</p>
+            <p id="genderbook" className="mt-1 text-sm text-center text-gray-500">{writer_name}</p>
+            <p className="text-sm text-center text-gray-500">{gender}</p>
           </div>
-          <p className="text-sm font-medium text-gray-900">${price}</p>
+          <p id="price" className="mt-1 text-sm  text-center font-medium text-gray-900">${price}</p>
        
         </div>
         {  existinCart ?
-         <Link to="/ViewCarrito"  type="button" className="mt-4 btn btn-info cart-button px-5"> Terminar Compra </Link> 
+         <Link to="/ViewCarrito"  type="button" className="mt-1 btn btn-info d-flex justify-content-center px-1"> Terminar Compra </Link> 
          :
         <ItemCount addToCart={addToCart} stock={stockNuevo}></ItemCount> 
       }
