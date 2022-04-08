@@ -38,28 +38,28 @@ if (itemInCart) {
 
 
   return (
-    <div class="bg-white">
-  <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div className="bg-white">
+  <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
     
-    <div class="col d-flex justify-content-center mb-4">
+    <div className="col d-flex justify-content-center mb-4">
           <img src={image} alt=""></img>
         </div>
-        <div class="mt-4 flex justify-between">
+        <div id="info" className="mt-4 flex justify-between">
           <div>
-            <h3 class="text-sm text-gray-700">
+            <h3 className="text-sm text-gray-700">
               
                 <span aria-n="true"></span>
                 {book_name}
               
             </h3>
-            <p class="mt-1 text-sm text-gray-500">{writer_name}</p>
-            <p class="mt-1 text-sm text-gray-500">{gender}</p>
+            <p className="mt-1 text-sm text-gray-500">{writer_name}</p>
+            <p className="mt-1 text-sm text-gray-500">{gender}</p>
           </div>
-          <p class="text-sm font-medium text-gray-900">${price}</p>
+          <p className="text-sm font-medium text-gray-900">${price}</p>
        
         </div>
         {  existinCart ?
-         <Link to="/carrito"  type="button" className="mt-4 btn btn-info cart-button px-5"> Terminar Compra </Link> 
+         <Link to="/ViewCarrito"  type="button" className="mt-4 btn btn-info cart-button px-5"> Terminar Compra </Link> 
          :
         <ItemCount addToCart={addToCart} stock={stockNuevo}></ItemCount> 
       }

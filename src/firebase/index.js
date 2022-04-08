@@ -50,3 +50,9 @@ export async function getBook(id) {
     const resultDoc = await getDoc(docref)
      return{ ...resultDoc.data(), id: resultDoc.id}
 }
+
+export async function sendOrder(orderData){
+   const miColec = collection(db,"orders")
+   const orderDoc = await addDoc(miColec,orderData)
+   return orderDoc.id
+}

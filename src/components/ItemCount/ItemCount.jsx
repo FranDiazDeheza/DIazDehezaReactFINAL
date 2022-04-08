@@ -19,7 +19,7 @@ return (
     
      <div className="container">
      <div className="border-primary container mt-5">
-     <div className="btn-group" role="group" aria-label="Basic outlined example">    
+     <div id="botonmameno" className="btn-group" role="group" aria-label="Basic outlined example">    
      <button onClick={resta} type="button" className="btn btn-outline-primary"> - </button>
      <span className="my-auto px-5">{count}</span>
      <button onClick={suma}  type="button" className="btn btn-outline-primary"> + </button>

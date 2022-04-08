@@ -11,17 +11,19 @@ function Item({id,image, stock, book_name, writer_name,gender,price}) {
         </div>
         <div className="mt-4 flex justify-between">
           <div>
-            <h3 className="text-sm text-gray-700">
+            <h3 className="text-sm text-center text-gray-700">
              
-                <span aria-hidden="true" ></span>
+                
                 {book_name}
            
             </h3>
-            <p className="mt-1 text-sm text-gray-500">{writer_name}</p>
-            <p className="mt-1 text-sm text-gray-500">{gender}</p>
+            <p className="mt-1 text-sm text-center text-gray-500">{writer_name}</p>
+            <p className="text-sm text-center text-gray-500">{gender}</p>
           </div>
-          <p className="text-sm font-medium text-gray-900">${price}</p>
-          <Link className="btn btn-npm install firebase" to={`/item/${id}`}>
+          <div>
+          <p className="mt-1 text-sm font-medium text-gray-900">${price}</p>
+          </div>
+          <Link className="mt-12 btn btn-success  px-1" to={`/item/${id}`}>
               Detalles del Libro
           </Link>
         </div>
@@ -34,3 +36,10 @@ function Item({id,image, stock, book_name, writer_name,gender,price}) {
 }
 
 export default Item
+
+
+
+
+
+
+

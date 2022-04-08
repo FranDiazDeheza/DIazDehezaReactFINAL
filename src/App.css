@@ -78,4 +78,17 @@
   justify-content: center;
 }
 
+#greeting{
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#botonmameno{
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+}
 
